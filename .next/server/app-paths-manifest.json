@@ -1,7 +1,4 @@
 {
-  "/dashboard/page": "app/dashboard/page.js",
-  "/admin/courses/[slug]/page": "app/admin/courses/[slug]/page.js",
-  "/admin/dashboard/page": "app/admin/dashboard/page.js",
-  "/admin/courses/add-new-course/page": "app/admin/courses/add-new-course/page.js",
-  "/admin/courses/page": "app/admin/courses/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/auth/login/page": "app/auth/login/page.js"
 }
