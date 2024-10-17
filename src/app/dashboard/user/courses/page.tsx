@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, Suspense } from 'react'
+import { useState, useEffect,  Suspense } from 'react'
 import { Search, Filter, BookOpen, Clock, Star, Users } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/select"
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
+import { cosmosClient } from '@/utils/cosmos/client'
 
 const courses = [
     {
@@ -62,6 +63,26 @@ export default function CourseDashboard() {
         course.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
         (selectedLevel === "" || course.level === selectedLevel)
     )
+
+    async function testingCosmos(){
+        const {database} = await cosmosClient.databases.createIfNotExists({
+            id: "hackpwd_lms"
+        })
+
+        const {container} = await database.containers.createIfNotExists({
+            id: "courses"
+        })
+
+        const {resources} = await container.items.query({
+            query: "SELECT * FROM courses"
+        }).fetchAll();
+
+        console.log(resources)
+    }
+
+    useEffect(() => {
+        // testingCosmos()
+    }, [])
 
     return (
         <div>
