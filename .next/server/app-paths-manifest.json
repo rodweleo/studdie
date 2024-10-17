@@ -1,7 +1,6 @@
 {
   "/page": "app/page.js",
   "/auth/login/page": "app/auth/login/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/dashboard/user/page": "app/dashboard/user/page.js",
   "/dashboard/user/courses/page": "app/dashboard/user/courses/page.js",
   "/dashboard/user/quizzes/page": "app/dashboard/user/quizzes/page.js"
