@@ -15,10 +15,11 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 const navItems = [
-    { name: "Dashboard", href: "/", icon: LayoutDashboard },
-    { name: "Courses", href: "/courses", icon: Book },
+    { name: "Dashboard", href: "/dashboard/user/", icon: LayoutDashboard },
+    { name: "Courses", href: "/dashboard/user/courses", icon: Book },
     { name: "Assignments", href: "/assignments", icon: PenTool },
     { name: "Quizzes", href: "/dashboard/user/quizzes", icon: GraduationCap },
+    { name: "Certifications", href: "/dashboard/user/certifications", icon: GraduationCap },
     { name: "Discussion", href: "/discussion", icon: MessageSquare },
 ]
 

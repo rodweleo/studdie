@@ -8,17 +8,16 @@ import { Label } from "@/components/ui/label"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Separator } from "@/components/ui/separator"
 import { Github, Mail, Phone, Linkedin, Facebook, Twitter } from 'lucide-react'
-import { login, signup } from '@/app/auth/login/actions'
+import { login } from '@/app/auth/login/actions'
 
 export default function LoginForm() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [phoneNumber, setPhoneNumber] = useState('')
 
-  const handleEmailLogin = (e: React.FormEvent) => {
+  const handleEmailLogin = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Implement email login logic here
-    console.log('Email login:', email, password)
+
   }
 
   const handlePhoneLogin = (e: React.FormEvent) => {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Toaster } from 'react-hot-toast';
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -11,6 +12,10 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Studdie",
   description: "",
+  openGraph: {
+    title: 'Studdie',
+    description: '',
+  },
 };
 
 export default function RootLayout({
@@ -22,11 +27,12 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen w-full font-sans antialiased",
+          "min-h-screen w-full font-sans antialiased bg-slate-100",
           fontSans.variable
         )}
       >
         {children}
+        <Toaster/>
       </body>
     </html>
   );

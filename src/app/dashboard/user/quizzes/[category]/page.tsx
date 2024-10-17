@@ -36,8 +36,9 @@ export default function Page(){
         );
     }, [pathName]);
 
-    const generateCategoryQuestions = async (category) => {
+    const generateCategoryQuestions = async (category: string) => {
         try{
+            const apiKey: string = process.env.NEXT_GEMINI_API_KEY!
             const genAI = new GoogleGenerativeAI("AIzaSyBGgdd3oxXhtMq9VYa_8h2_CnIq6OnTXd0");
             const model = genAI.getGenerativeModel({ 
                 model: "gemini-1.5-flash",
@@ -96,7 +97,7 @@ export default function Page(){
 
     return (
         <div className="h-full">
-            <main className="container grid place-items-center pt-20">
+            <main className="container grid place-items-center pt-20 space-y-4">
                 <h1 className="font-bold text-3xl">Taking a Quiz on {pathName.split("/")[4].slice(0, 1).toUpperCase().concat(pathName.split("/")[4].slice(1, pathName.split("/")[4].length).toLowerCase())}</h1>
                 {
                     generatedQuestions.length > 0 ? <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8 space-y-4">
