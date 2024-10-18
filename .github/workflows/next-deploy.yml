@@ -1,4 +1,4 @@
-name: Build and deploy Next.js app to Azure Web App
+name: Build and deploy Studdie app to Azure Web App
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  APPLICATION_PUBLISH_PROFILE: ${{ secrets.APP_PUBLISH_PROFILE  }}
+  APPLICATION_PUBLISH_PROFILE: ${{ secrets.APP_PUBLICH_PROFILE  }}
   WEBAPP_NAME: "studdie"
 
 jobs:
