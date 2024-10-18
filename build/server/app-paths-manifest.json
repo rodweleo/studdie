@@ -1,9 +1,0 @@
-{
-  "/_not-found/page": "app/_not-found/page.js",
-  "/auth/login/page": "app/auth/login/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/dashboard/user/page": "app/dashboard/user/page.js",
-  "/dashboard/user/courses/page": "app/dashboard/user/courses/page.js",
-  "/dashboard/user/courses/[course]/learn/page": "app/dashboard/user/courses/[course]/learn/page.js",
-  "/dashboard/user/courses/[course]/page": "app/dashboard/user/courses/[course]/page.js"
-}

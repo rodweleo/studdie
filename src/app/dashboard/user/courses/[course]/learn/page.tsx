@@ -3,13 +3,14 @@ import CourseSidebar from '@/components/student/course-sidebar'
 import LearnCourseDashboard from '@/components/student/learn-course-dashboard'
 import { blobServiceClient } from '@/utils/cosmos/client'
 import { generateSasUrl } from '@/utils/functions/generate-sas-url'
-
+import AbortController from "@azure/abort-controller";
 interface IBlobItem {
   name: string,
   url: string
 }
 export default async function CourseTabs() {
 
+  let controller: AbortController;
   const fetchBlobs = async () => {
     const containerClient = blobServiceClient.getContainerClient("hackpwd");
 
