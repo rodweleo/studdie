@@ -16,10 +16,11 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { ChevronDown, MessageSquare, ThumbsUp, Download, Play } from 'lucide-react'
 import CourseOverview from '@/components/student/course-overview'
+import Image from "next/image"
 
 
 export default function LearnCourseDashboard({courseResource}:{
-    courseResource?: any
+    courseResource?: any[]
 }) {
     const [activeTab, setActiveTab] = useState("overview")
     const [notes, setNotes] = useState("")
@@ -32,7 +33,7 @@ export default function LearnCourseDashboard({courseResource}:{
     return (
         <main className='w-full'>
             {
-                courseResource.length > 0 && <video title={courseResource[0].name} src={courseResource[0].url} className="w-full" autoPlay loop controls></video>
+                courseResource && courseResource.length > 0 ? <video title={courseResource[0].name} src={courseResource[0].url} className="w-full" autoPlay loop controls></video> : null
             }
             <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full p-4">
                 <TabsList className="grid w-1/2 grid-cols-4">
@@ -141,7 +142,7 @@ export default function LearnCourseDashboard({courseResource}:{
                             </div>
                             {notes.length === 0 && (
                                 <div className="text-center mt-8">
-                                    <img src="/placeholder.svg?height=100&width=100" alt="No notes" className="mx-auto mb-4" />
+                                    <Image src="/placeholder.svg?height=100&width=100" alt="No notes" className="mx-auto mb-4" height={100} width={100}/>
                                     <h3 className="text-lg font-semibold mb-2">No notes saved yet</h3>
                                     <p className="text-sm text-gray-500">Take notes to remember what you learned.</p>
                                 </div>

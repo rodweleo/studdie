@@ -1,5 +1,46 @@
 {
-  "node": {},
+  "node": {
+    "a4e9358db7d2393748a62ebe71f06c1294672043": {
+      "workers": {
+        "app/auth/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CChristy%5C%5Cprojects%5C%5Cstuddie%5C%5Csrc%5C%5Capp%5C%5Cauth%5C%5Clogin%5C%5Cactions.ts%22%2C%5B%22logout%22%2C%22login%22%2C%22signup%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/auth/login/page": "action-browser"
+      }
+    },
+    "f7ee39021fd4d0b90eae69731a0c21d8e46e852b": {
+      "workers": {
+        "app/auth/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CChristy%5C%5Cprojects%5C%5Cstuddie%5C%5Csrc%5C%5Capp%5C%5Cauth%5C%5Clogin%5C%5Cactions.ts%22%2C%5B%22logout%22%2C%22login%22%2C%22signup%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/auth/login/page": "action-browser"
+      }
+    },
+    "401963637ca142f5510eb987d67f026c9feff1c3": {
+      "workers": {
+        "app/dashboard/user/courses/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CChristy%5C%5Cprojects%5C%5Cstuddie%5C%5Csrc%5C%5Cutils%5C%5Cfunctions%5C%5CfetchAllCourses.ts%22%2C%5B%22fetchAllCourses%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/dashboard/user/courses/page": "action-browser"
+      }
+    },
+    "cff80389120bbfbd01ca43c81e5107db23805592": {
+      "workers": {
+        "app/dashboard/user/courses/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CChristy%5C%5Cprojects%5C%5Cstuddie%5C%5Csrc%5C%5Cutils%5C%5Cfunctions%5C%5CfetchAllCourses.ts%22%2C%5B%22fetchAllCourses%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/dashboard/user/courses/page": "action-browser"
+      }
+    },
+    "13f1e1f8c178eaee1303b6f9f69db9956527d954": {
+      "workers": {
+        "app/auth/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CChristy%5C%5Cprojects%5C%5Cstuddie%5C%5Csrc%5C%5Capp%5C%5Cauth%5C%5Clogin%5C%5Cactions.ts%22%2C%5B%22logout%22%2C%22login%22%2C%22signup%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/auth/login/page": "action-browser"
+      }
+    }
+  },
   "edge": {},
   "encryptionKey": "UfQVKm1Vv+Hyf0NPvXivyoj3iBiqsiBcIK6da1IEon4="
 }

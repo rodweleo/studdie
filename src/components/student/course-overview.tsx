@@ -5,6 +5,7 @@ import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from 'next/image'
 
 export default function CourseOverview() {
     return (
@@ -100,7 +101,7 @@ export default function CourseOverview() {
                         </CardHeader>
                         <CardContent>
                             <div className="flex items-center mb-4">
-                                <img src="/placeholder.svg?height=50&width=100" alt="NASBA Logo" className="mr-4" />
+                                <Image src="/placeholder.svg" alt="NASBA Logo" className="mr-4" height={60} width={100} />
                                 <div>
                                     <p className="font-semibold">National Association of State Boards of Accountancy (NASBA)</p>
                                     <p className="text-sm text-gray-600">Continuing Professional Education Credit (CPE)</p>
@@ -186,10 +187,12 @@ export default function CourseOverview() {
                     {[1, 2, 3, 4, 5].map((index) => (
                         <Card key={index} className="mb-4">
                             <CardContent className="flex items-center p-4">
-                                <img
-                                    src="/placeholder.svg?height=60&width=100"
+                                <Image
+                                    src="/placeholder.svg"
                                     alt={`Related Course ${index}`}
                                     className="w-24 h-14 object-cover rounded mr-4"
+                                    height={60}
+                                    width={100}
                                 />
                                 <div>
                                     <h4 className="font-semibold text-sm">Related Course Title {index}</h4>

@@ -21,8 +21,7 @@ export default async function UserAccount({
     redirect('/auth/login')
   }
   return (
-    <html lang="en">
-      <body className="w-full h-full bg-slate-100">
+      <div className="w-full h-full bg-slate-100">
         <header className="sticky top-0 z-50 flex items-center  w-full justify-around bg-white">
           <Link href="" className="font-bold text-2xl">Studdie</Link>
           <StudentNav />
@@ -48,8 +47,6 @@ export default async function UserAccount({
         <main className="h-full">
           {children}
         </main>
-      </body>
-      </html>
-    
+      </div>    
   );
 }

@@ -1,24 +1,26 @@
+"use client"
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import { BookOpen, Clock, Users, Star, CheckCircle } from 'lucide-react'
-
+import Image from "next/image"
 export default function CoursePage() {
     const course = {
         title: "Advanced Machine Learning",
         description: "Dive deep into machine learning algorithms and applications. This course covers advanced topics in machine learning, including deep learning, reinforcement learning, and natural language processing.",
         instructor: {
             name: "Prof. John Doe",
-            image: "/placeholder.svg?height=50&width=50",
+            image: "/placeholder.svg",
             bio: "Professor of Computer Science with 15 years of experience in machine learning research and industry applications.",
         },
         duration: "12 weeks",
         level: "Advanced",
         rating: 4.8,
         students: 800,
-        image: "/placeholder.svg?height=300&width=600",
+        image: "/placeholder.svg",
         price: "$499",
         curriculum: [
             { title: "Introduction to Advanced ML Concepts", duration: "1 week" },
@@ -42,7 +44,7 @@ export default function CoursePage() {
                 <div className="md:col-span-2">
                     <h1 className="text-3xl font-bold mb-4">{course.title}</h1>
                     <p className="text-gray-600 mb-6">{course.description}</p>
-                    <img src={course.image} alt={course.title} className="w-full rounded-lg mb-6" />
+                    <Image src="/placeholder.svg" alt={course.title} width={600} height={300}/>
 
                     <Tabs defaultValue="curriculum" className="mb-6">
                         <TabsList>
